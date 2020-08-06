@@ -1,0 +1,121 @@
+@import '../../variables.scss';
+
+.day {
+  &__container {
+    display: grid;
+    justify-content: center;
+  }
+
+  &__container--items {
+    width: 50rem;
+    background-image: url('../../assets/images/sky.jpg');
+    margin: 0.5rem;
+    padding: 1.3rem;
+    border-radius: 1.5rem;
+    background-color: $color-primary-white;
+
+    & span {
+      font-size: 4rem;
+      color: $color-primary-orange;
+    }
+  }
+
+  &__container--temp {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+    p {
+      font-size: 2.5rem;
+      color: $color-primary-white;
+    }
+  }
+
+  &__container--name {
+    p {
+      font-size: 3rem;
+      color: $color-primary-white;
+    }
+  }
+
+  &__container--type {
+    p {
+      font-size: 1.5rem;
+      color: $color-primary-white;
+    }
+  }
+
+  &__container--options {
+    margin-top: 1rem;
+    div {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    img {
+      width: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+      color: $color-primary-white;
+    }
+  }
+
+  &__container--items {
+    background-image: url('../../assets/images/sky.jpg');
+    margin: 0.5rem;
+    margin-top: 2rem;
+    padding: 1.3rem;
+    border-radius: 1.5rem;
+    background-color: $color-primary-white;
+
+    & span {
+      font-size: 4rem;
+      color: $color-primary-orange;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  html {
+    font-size: 40.5%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 30.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50.5%;
+  }
+
+  .week {
+    &__container--temp {
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    &__container--name {
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    &__container--options {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
